@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: lightblue;
+    height: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: lightblue;
+    height: 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+.container {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.left-part,
+.right-part {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.193);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: lightblue;
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.my-info {
+    padding-left: 10px;
+    margin: 0;
+
+    li {
+        margin: 5px 0;
+    }
+}
+
+.no-style {
+    padding: 0;
+    list-style: none;
+}
+
+.fat {
+    font-weight: 700;
+}
+
+.project-name {
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+@media all and (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
